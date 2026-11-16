@@ -116,11 +116,13 @@
                 Console.Write(temp.Data + " -> ");
                 temp = temp.Next;
             }
-            Console.WriteLine();
+            Console.WriteLine('\n');
         }
 
         static void LinkedListReverseAdd()
         {
+            Console.WriteLine("This Program show the sum of two LinkedList that is stored in reverse order. ");
+
             LinkedList LL = new LinkedList();
             LinkedList LL2 = new LinkedList();
 
@@ -134,9 +136,13 @@
 
             LinkedList result = AddLinkedList(LL, LL2);
 
+            Console.WriteLine("List 1: ");
             PrintList(LL);
+            Console.WriteLine("List 2: ");
             PrintList(LL2);
+            Console.WriteLine("Result: ");
             PrintList(result);
+            
 
             LinkedList LL3 = new LinkedList();
             LinkedList LL4 = new LinkedList();
@@ -145,9 +151,13 @@
             LL4.Add(0);
             result = AddLinkedList(LL3, LL4);
 
+            Console.WriteLine("List 1: ");
             PrintList(LL3);
+            Console.WriteLine("List 2: ");
             PrintList(LL4);
+            Console.WriteLine("Result: ");
             PrintList(result);
+
 
             LinkedList LL5 = new LinkedList();
             LinkedList LL6 = new LinkedList();
@@ -166,8 +176,11 @@
             LL6.Add(9);
             result = AddLinkedList(LL5, LL6);
 
+            Console.WriteLine("List 1: ");
             PrintList(LL5);
+            Console.WriteLine("List 2: ");
             PrintList(LL6);
+            Console.WriteLine("Result: ");
             PrintList(result);
 
             
